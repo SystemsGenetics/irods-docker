@@ -30,4 +30,4 @@ Once you've built the image, you can use the icommands "out-of-the-box" by creat
 alias iinit="singularity exec irods.simg iinit"
 ```
 
-The script `install-irods-tmod.sh` creates an Environment Module modulefile which sets up an alias for every icommand in this way. This script can also be adapted to create an Lmod module. You may need to edit this script to work in your particular environment.
+The scripts `install-irods-lmod.sh` and `install-irods-tmod.sh` respectively create an Lmod module or Environment Module which provides these aliases automatically. You may need to edit these scripts to work for your particular environment.
