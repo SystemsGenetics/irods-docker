@@ -4,7 +4,7 @@ MODULEDIR="$HOME/privatemodules"
 SOFTWAREDIR="$HOME/software"
 
 MODULE_NAME="irods"
-MODULE_VERSION="4.2.0"
+MODULE_VERSION="4.2.4"
 MODULE_PATH="$SOFTWAREDIR/$MODULE_NAME/$MODULE_VERSION"
 
 # verify Singularity image
@@ -27,7 +27,7 @@ mkdir -p $MODULEDIR/$MODULE_NAME
 
 cat > "$MODULEDIR/$MODULE_NAME/$MODULE_VERSION" <<EOF
 help([[
-    iRODS Version 4.2.0
+    iRODS Version $MODULE_VERSION
     For more information on a particular icommand:
      '<icommand> -h'
     or
