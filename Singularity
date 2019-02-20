@@ -8,9 +8,11 @@ From: docker://centos:7
 	# install package dependencies
 	yum install -q -y wget
 
-	# add the iRODS package repository
-	rpm --import https://packages.irods.org/irods-signing-key.asc
-	wget -qO - https://packages.irods.org/renci-irods.yum.repo | tee /etc/yum.repos.d/renci-irods.yum.repo
+	# download iRODS icommands rpm
+	wget https://files.renci.org/pub/irods/releases/4.1.12/centos7/irods-icommands-4.1.12-centos7-x86_64.rpm
 
 	# install iRODS icommands
-	yum install -q -y irods-icommands
+	yum install -q -y irods-icommands-4.1.12-centos7-x86_64.rpm
+
+	# cleanup
+	rm -f irods-icommands-4.1.12-centos7-x86_64.rpm

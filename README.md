@@ -3,7 +3,7 @@
 This repository contains the files for building a Docker or Singularity image of the iRODS client commands, as well the files to create an Environment Module (or Lmod module) for the client commands, for use on an HPC system.
 
 - Singularity documentation: https://www.sylabs.io/guides/2.5/user-guide/index.html
-- iRODS documentation: https://docs.irods.org/4.2.4/
+- iRODS documentation: https://docs.irods.org/4.1.12/
 - Environment Modules: http://modules.sourceforge.net/
 - Lmod: https://lmod.readthedocs.io/en/latest/
 
